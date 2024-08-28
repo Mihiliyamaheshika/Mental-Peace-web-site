@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>GTCoding</title>
+</head>
+
+<body>
+  <div id="slideout-menu">
+      <ul>
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a href="blogs.html">Blog</a>
+          </li>
+          <li>
+            <a href="counseling.html">Counseling</a>
+        </li>
+          <li>
+              <a href="about.html">About</a>
+          </li>
+          <li>
+              <input type="text" placeholder="Search Here">
+          </li>
+      </ul>
+  </div>
+
+  <nav>
+      <div id="logo-img">
+          <a href="#">
+              <img src="img/logo.png" alt="GTCoding Logo">
+          </a>
+      </div>
+      <div id="menu-icon">
+          <i class="fas fa-bars"></i>
+      </div>
+      <ul>
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a class="active" href="blogs.html">Blog</a>
+          </li>
+          <li>
+            <a href="counseling.html">Counseling</a>
+        </li>
+          <li>
+              <a href="about.html">About</a>
+          </li>
+          <li>
+              <div id="search-icon">
+                  <i class="fas fa-search"></i>
+              </div>
+          </li>
+      </ul>
+  </nav>
+
+  <div id="searchbox">
+      <input type="text" placeholder="Search Here">
+  </div>
+
+  <main>
+    <h2 class="page-heading">Blogs</h2>
+
+    <section>
+      <!-- Life Blog Card -->
+      <div class="card">
+        <div class="card-image">
+          <a href="life.html">
+            <img src="img/life.jpg" alt="Life Blog Image">
+          </a>
+        </div>
+        <div class="card-description">
+          <a href="life.html">
+            <h3>Life: Finding Balance and Joy</h3>
+          </a>
+          <div class="card-meta">
+            Posted by Admin on 23/01/2024 in
+            <a href="#">Life</a>
+          </div>
+          <p>
+            Explore tips for maintaining balance and finding joy in everyday life. Discover strategies for personal growth and happiness.
+          </p>
+          <a href="life.html" class="btn-readmore">Read more</a>
+        </div>
+      </div>
+
+      <!-- Family Blog Card -->
+      <div class="card">
+        <div class="card-image">
+          <a href="family.html">
+            <img src="img/family.jpg" alt="Family Blog Image">
+          </a>
+        </div>
+        <div class="card-description">
+          <a href="family.html">
+            <h3>Family: Strengthening Bonds</h3>
+          </a>
+          <div class="card-meta">
+            Posted by Admin on 23/01/2024 in
+            <a href="#">Family</a>
+          </div>
+          <p>
+            Learn effective ways to strengthen family bonds and build a supportive home environment. Tips for nurturing relationships with loved ones.
+          </p>
+          <a href="family.html" class="btn-readmore">Read more</a>
+        </div>
+      </div>
+
+      <!-- Love Blog Card -->
+      <div class="card">
+        <div class="card-image">
+          <a href="love.html">
+            <img src="img/love.jpg" alt="Love Blog Image">
+          </a>
+        </div>
+        <div class="card-description">
+          <a href="love.html">
+            <h3>Love: Cultivating Deep Connections</h3>
+          </a>
+          <div class="card-meta">
+            Posted by Admin on 23/01/2024 in
+            <a href="#">Love</a>
+          </div>
+          <p>
+            Explore ways to cultivate and maintain deep, meaningful connections with others. Advice on communication and relationship-building.
+          </p>
+          <a href="love.html" class="btn-readmore">Read more</a>
+        </div>
+      </div>
+
+      <!-- Child Blog Card -->
+      <div class="card">
+        <div class="card-image">
+          <a href="child.html">
+            <img src="img/child.jpg" alt="Child Blog Image">
+          </a>
+        </div>
+        <div class="card-description">
+          <a href="child.html">
+            <h3>Child Development: Tips and Strategies</h3>
+          </a>
+          <div class="card-meta">
+            Posted by Admin on 23/01/2024 in
+            <a href="#">Child</a>
+          </div>
+          <p>
+            Find helpful tips and strategies for supporting your child's development and growth. Insights into parenting and child psychology.
+          </p>
+          <a href="child.html" class="btn-readmore">Read more</a>
+        </div>
+      </div>
+
+      <!-- Educational Tips Blog Card -->
+      <div class="card">
+        <div class="card-image">
+          <a href="education.html">
+            <img src="img/education.jpg" alt="Educational Tips Blog Image">
+          </a>
+        </div>
+        <div class="card-description">
+          <a href="education.html">
+            <h3>Educational Tips: Enhancing Learning</h3>
+          </a>
+          <div class="card-meta">
+            Posted by Admin on 23/01/2024 in
+            <a href="#">Education</a>
+          </div>
+          <p>
+            Discover tips and techniques to enhance learning and academic performance. Resources for students, parents, and educators.
+          </p>
+          <a href="education.html" class="btn-readmore">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Request Blog Post Topics</h2>
+      <form id="request-form">
+        <label for="topic-request">Suggest a topic:</label>
+        <input type="text" id="topic-request" name="topic-request" placeholder="Enter your topic idea here">
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <div class="pagination">
+      <a href="#">Prev</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">Next</a>
+    </div>
+
+    <footer>
+        <div id="left-footer">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="blogslist.html">Blogs</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="right-footer">
+            <h3>Follow us on</h3>
+            <div id="social-media-footer">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>This website is developed by GTCoding</p>
+        </div>
+    </footer>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counseling Services</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Counseling Services</h1>
+        <p>Hello! I am Mihiliya Maheshika, a professional counselor. I offer the following services:</p>
+
+        <form id="appointment-form">
+            <label for="service-type">Select Counseling Service:</label>
+            <select id="service-type" required>
+                <option value="individual">Individual Counseling</option>
+                <option value="love">Love Counseling</option>
+                <option value="family">Family Counseling</option>
+                <option value="couples">Couples Counseling</option>
+            </select>
+
+            <label for="available-dates">Select Date:</label>
+            <input type="date" id="available-dates" required placeholder="Select a date">
+
+            <label for="available-times">Select Time:</label>
+            <input type="time" id="available-times" required placeholder="Select a time">
+
+            <button type="submit">Submit Appointment</button>
+        </form>
+
+        <div id="confirmation-message"></div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"></script>
+    
+    <!-- Custom App Script -->
+    <script type="node_modules" src="app.js"></script>
+</body>
+</html>
